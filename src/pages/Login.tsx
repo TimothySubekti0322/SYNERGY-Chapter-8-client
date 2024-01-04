@@ -72,7 +72,10 @@ const Login = () => {
               placeholder="6+ karakter"
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button type="submit" className="bg-[#0D28A6] text-white mt-8">
+            <button
+              type="submit"
+              className="bg-[#0D28A6] text-white mt-8 w-full"
+            >
               Sign In
             </button>
           </form>

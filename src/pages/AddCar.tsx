@@ -138,14 +138,20 @@ const AddCar = () => {
                 <section className="w-full bg-white rounded-sm p-4 mt-4">
                   <form>
                     {/* <!-- Nama --> */}
-                    <NameInput value="" handleInputChange={handleInputChange} />
+                    <NameInput
+                      value={name}
+                      handleInputChange={handleInputChange}
+                    />
 
                     {/* <!-- Sewa Per Hari --> */}
-                    <CostInput value="" handleInputChange={handleInputChange} />
+                    <CostInput
+                      value={cost}
+                      handleInputChange={handleInputChange}
+                    />
 
                     {/* <!-- Size --> */}
                     <SizeInput
-                      value=""
+                      value={size}
                       handleSelectChange={handleSelectChange}
                     />
 
@@ -163,14 +169,14 @@ const AddCar = () => {
                 {/* Cancel & Save Button */}
                 <div className="w-full flex mt-20 mb-4">
                   <button
-                    className="bg-white text-[#0D28A6] font-bold border-2 border-[#0D28A6] rounded-sm hover:bg-[#0D28A6] hover:text-white"
+                    className="bg-white text-[#0D28A6] font-bold border-2 border-[#0D28A6] rounded-sm hover:bg-[#0D28A6] hover:text-white px-[1.2rem] py-[0.6rem]"
                     onClick={handleBackButton}
                   >
                     cancel
                   </button>
                   <button
                     type="submit"
-                    className="ml-4 bg-[#0D28A6] font-bold text-white rounded-sm hover:bg-[#0A0573]"
+                    className="ml-4 bg-[#0D28A6] font-bold text-white rounded-sm hover:bg-[#0A0573] px-[1.2rem] py-[0.6rem]"
                     onClick={handleSubmit}
                   >
                     {loading ? (

@@ -46,7 +46,7 @@ const TopNavbar = () => {
 
         {/* <!-- Right groups --> */}
         <div className="flex h-full items-center">
-          <div id="search-container" className="flex">
+          <div id="search-container" className="flex h-full">
             <input
               type="text"
               placeholder="Search"
